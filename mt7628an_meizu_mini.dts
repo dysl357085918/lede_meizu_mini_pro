@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later OR MIT
 
-#include "mt7628an_hiwifi_hc5x61a.dtsi"
+#include "mt7628an_meizu_hc5x61a.dtsi"
 
 / {
 	compatible = "meizu,mini", "mediatek,mt7628an-soc";
