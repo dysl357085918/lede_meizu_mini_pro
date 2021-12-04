@@ -10,7 +10,7 @@ lede源码修改/添加以下文件（可以自己比对修改了哪里，也可
 
 我一共改了这五个地方
 
-刷openwrt前，建议先刷入breed
+刷openwrt前，建议先刷入breed，breed版本是breed-mt76x8-blank.bin,可从恩山等地找到教程
 然后从breed刷入openwrt
 这里附件一个我编译好的，没啥特殊功能的固件。
 这孱弱的性能拿来科学上网太吃力了。
