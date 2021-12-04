@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: GPL-2.0-or-later OR MIT
+
+#include "mt7628an_hiwifi_hc5x61a.dtsi"
+
+/ {
+	compatible = "meizu,mini", "mediatek,mt7628an-soc";
+	model = "meizu mini";
+
+	leds {
+		compatible = "gpio-leds";
+
+		led_system: system {
+			label = "blue:system";
+			gpios = <&gpio 5 GPIO_ACTIVE_HIGH>;
+		};
+	};
+};
+
+&state_default {
+	gpio {
+		groups = "i2c", "refclk", "wdt", "p2led_an", "p3led_an", "wled_an";
+		function = "gpio";
+	};
+};
+
+&pcie {
+	status = "okay";
+};
+
+&pcie0 {
+	wifi@0,0 {
+		reg = <0x0000 0 0 0 0>;
+		mediatek,mtd-eeprom = <&factory 0x8000>;
+		ieee80211-freq-limit = <5000000 6000000>;
+	};
+};
