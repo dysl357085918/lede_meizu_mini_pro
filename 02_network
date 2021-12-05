@@ -92,7 +92,7 @@ ramips_setup_interfaces()
 		;;
 	meizu,mini)
 		ucidef_add_switch "switch0" \
-			"0:lan" "1:lan" "6@eth0"
+			"4:wan" "6@eth0"
 		;;
 	iptime,a3|\
 	totolink,a3)
