@@ -15,7 +15,7 @@ lede源码修改/添加以下文件（可以自己比对修改了哪里，也可
 
 如何刷入：
 
-1.padavan下先刷入breed，breed版本是breed-mt76x8-blank.bin,可从恩山等地找到教程，并修改环境变量指定一个自定义复位键配置，这里是38L. env set gpio.customized.reset 11L
+1.padavan下先刷入breed，breed版本是breed-mt76x8-blank.bin,可从恩山等地找到教程，并修改环境变量指定一个自定义复位键配置，这里是38L. env set gpio.customized.reset 38L
 
 #breed刷入教程参考https://www.right.com.cn/forum/thread-161906-1-1.html
 有breed就是随便刷，刷不死了。
